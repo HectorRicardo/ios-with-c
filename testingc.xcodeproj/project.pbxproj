@@ -13,6 +13,8 @@
 		3A1D0058277F6E5700B242EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1D0056277F6E5700B242EC /* Main.storyboard */; };
 		3A1D005A277F6E5800B242EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1D0059277F6E5800B242EC /* Assets.xcassets */; };
 		3A1D005D277F6E5800B242EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1D005B277F6E5800B242EC /* LaunchScreen.storyboard */; };
+		3A1D0068277F70EB00B242EC /* CPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D0066277F70EB00B242EC /* CPP.cpp */; };
+		3A1D006C277F842E00B242EC /* CPPWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D006B277F842E00B242EC /* CPPWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,11 @@
 		3A1D0059277F6E5800B242EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A1D005C277F6E5800B242EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A1D005E277F6E5800B242EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A1D0065277F70EB00B242EC /* testingc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testingc-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A1D0066277F70EB00B242EC /* CPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPP.cpp; sourceTree = "<group>"; };
+		3A1D0067277F70EB00B242EC /* CPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPP.hpp; sourceTree = "<group>"; };
+		3A1D006A277F83D300B242EC /* CPPWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPPWrapper.h; sourceTree = "<group>"; };
+		3A1D006B277F842E00B242EC /* CPPWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CPPWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,11 @@
 				3A1D0059277F6E5800B242EC /* Assets.xcassets */,
 				3A1D005B277F6E5800B242EC /* LaunchScreen.storyboard */,
 				3A1D005E277F6E5800B242EC /* Info.plist */,
+				3A1D0066277F70EB00B242EC /* CPP.cpp */,
+				3A1D006A277F83D300B242EC /* CPPWrapper.h */,
+				3A1D006B277F842E00B242EC /* CPPWrapper.mm */,
+				3A1D0067277F70EB00B242EC /* CPP.hpp */,
+				3A1D0065277F70EB00B242EC /* testingc-Bridging-Header.h */,
 			);
 			path = testingc;
 			sourceTree = "<group>";
@@ -98,6 +110,7 @@
 				TargetAttributes = {
 					3A1D004C277F6E5700B242EC = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -137,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1D0068277F70EB00B242EC /* CPP.cpp in Sources */,
+				3A1D006C277F842E00B242EC /* CPPWrapper.mm in Sources */,
 				3A1D0055277F6E5700B242EC /* ViewController.swift in Sources */,
 				3A1D0051277F6E5700B242EC /* AppDelegate.swift in Sources */,
 				3A1D0053277F6E5700B242EC /* SceneDelegate.swift in Sources */,
@@ -286,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testingc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,6 +310,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.learning.testingc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testingc/testingc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testingc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.learning.testingc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testingc/testingc-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
