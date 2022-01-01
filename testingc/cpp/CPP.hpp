@@ -8,8 +8,6 @@
 #ifndef CPP_hpp
 #define CPP_hpp
 
-#include <string>
-
 class CPP {
 public:
     void start_thread_wrapper();

@@ -6,7 +6,6 @@
 //
 
 #include "CPP.hpp"
-#include <string>
 #include "thread_logic.hpp"
 
 void CPP::start_thread_wrapper() {
