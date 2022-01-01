@@ -74,16 +74,32 @@
 				3A1D0059277F6E5800B242EC /* Assets.xcassets */,
 				3A1D005B277F6E5800B242EC /* LaunchScreen.storyboard */,
 				3A1D005E277F6E5800B242EC /* Info.plist */,
+				3A422CE8277FF84D002B5309 /* cpp */,
+				3A1D0065277F70EB00B242EC /* testingc-Bridging-Header.h */,
+			);
+			path = testingc;
+			sourceTree = "<group>";
+		};
+		3A422CE8277FF84D002B5309 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
 				3A1D0066277F70EB00B242EC /* CPP.cpp */,
 				3A1D006A277F83D300B242EC /* CPPWrapper.h */,
 				3A422CE6277FF10F002B5309 /* print.hpp */,
 				3A1D006B277F842E00B242EC /* CPPWrapper.mm */,
 				3A1D0067277F70EB00B242EC /* CPP.hpp */,
+				3A422CE9277FF870002B5309 /* logic */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		3A422CE9277FF870002B5309 /* logic */ = {
+			isa = PBXGroup;
+			children = (
 				3A422CE2277FEB79002B5309 /* thread_logic.cpp */,
 				3A422CE3277FEB79002B5309 /* thread_logic.hpp */,
-				3A1D0065277F70EB00B242EC /* testingc-Bridging-Header.h */,
 			);
-			path = testingc;
+			path = logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
