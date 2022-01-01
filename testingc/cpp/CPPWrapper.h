@@ -12,7 +12,6 @@
 
 @interface CPPWrapper : NSObject
 
-- (NSString*) sayHello;
 - (void) start_thread;
 
 @end

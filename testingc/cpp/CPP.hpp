@@ -12,7 +12,6 @@
 
 class CPP {
 public:
-    std::string sayHello();
     void start_thread_wrapper();
 };
 
