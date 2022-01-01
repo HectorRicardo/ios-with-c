@@ -11,10 +11,15 @@
 
 @implementation CPPWrapper
 
+CPP cpp;
+
 - (NSString*) sayHello {
-    CPP cpp;
     std::string helloWorldMessage = cpp.sayHello();
     return [NSString stringWithCString:helloWorldMessage.c_str() encoding:NSUTF8StringEncoding];
+}
+
+- (void) start_thread {
+    cpp.start_thread_wrapper();
 }
 
 @end

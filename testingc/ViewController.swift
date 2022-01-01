@@ -13,8 +13,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myLabel2.text = CPPWrapper().sayHello()
+        let cppWrapper = CPPWrapper()
+        myLabel2.text = cppWrapper.sayHello()
         myLabel2.sizeToFit()
+        cppWrapper.start_thread()
         // Do any additional setup after loading the view.
         
     }
