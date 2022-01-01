@@ -15,11 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         myLabel2.text = "Hello normal"
         myLabel2.sizeToFit()
-        
+
         let cppWrapper = CPPWrapper()
         cppWrapper.start_thread()
     }
-
-
 }
-
