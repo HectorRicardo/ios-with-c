@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         myLabel2.text = "Hello normal"
         myLabel2.sizeToFit()
 
-        let cppWrapper = CPPWrapper()
-        cppWrapper.start_thread()
+        // Calling C++
+        start_thread_wrapper()
     }
 }

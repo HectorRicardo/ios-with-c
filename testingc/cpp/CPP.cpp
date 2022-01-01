@@ -7,7 +7,8 @@
 
 #include "CPP.hpp"
 #include "thread_logic.hpp"
+#include "print.hpp"
 
-void CPP::start_thread_wrapper() {
+void start_thread_wrapper() {
     start_thread();
 }

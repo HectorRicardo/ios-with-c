@@ -3,4 +3,4 @@
 
 void start_thread();
 
-#endif // MYAPP_THREAD_LOGIC_HPP
+#endif //MYAPP_THREAD_LOGIC_HPP

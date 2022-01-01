@@ -8,4 +8,4 @@
 
 #define print(...) {printf(__VA_ARGS__); puts("");}
 
-#endif // MYAPP_PRINT_HPP
+#endif //MYAPP_PRINT_HPP

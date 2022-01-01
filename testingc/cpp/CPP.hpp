@@ -8,9 +8,14 @@
 #ifndef CPP_hpp
 #define CPP_hpp
 
-class CPP {
-public:
-    void start_thread_wrapper();
-};
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void start_thread_wrapper();
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* CPP_hpp */

@@ -14,7 +14,6 @@
 		3A1D005A277F6E5800B242EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1D0059277F6E5800B242EC /* Assets.xcassets */; };
 		3A1D005D277F6E5800B242EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1D005B277F6E5800B242EC /* LaunchScreen.storyboard */; };
 		3A1D0068277F70EB00B242EC /* CPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D0066277F70EB00B242EC /* CPP.cpp */; };
-		3A1D006C277F842E00B242EC /* CPPWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D006B277F842E00B242EC /* CPPWrapper.mm */; };
 		3A422CE4277FEB79002B5309 /* thread_logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A422CE2277FEB79002B5309 /* thread_logic.cpp */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +29,6 @@
 		3A1D0065277F70EB00B242EC /* testingc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testingc-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A1D0066277F70EB00B242EC /* CPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPP.cpp; sourceTree = "<group>"; };
 		3A1D0067277F70EB00B242EC /* CPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPP.hpp; sourceTree = "<group>"; };
-		3A1D006A277F83D300B242EC /* CPPWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPPWrapper.h; sourceTree = "<group>"; };
-		3A1D006B277F842E00B242EC /* CPPWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CPPWrapper.mm; sourceTree = "<group>"; };
 		3A422CE2277FEB79002B5309 /* thread_logic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thread_logic.cpp; sourceTree = "<group>"; };
 		3A422CE3277FEB79002B5309 /* thread_logic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = thread_logic.hpp; sourceTree = "<group>"; };
 		3A422CE6277FF10F002B5309 /* print.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = print.hpp; sourceTree = "<group>"; };
@@ -85,8 +82,6 @@
 			children = (
 				3A1D0066277F70EB00B242EC /* CPP.cpp */,
 				3A1D0067277F70EB00B242EC /* CPP.hpp */,
-				3A1D006A277F83D300B242EC /* CPPWrapper.h */,
-				3A1D006B277F842E00B242EC /* CPPWrapper.mm */,
 				3A422CE6277FF10F002B5309 /* print.hpp */,
 				3A422CE9277FF870002B5309 /* logic */,
 			);
@@ -174,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A1D0068277F70EB00B242EC /* CPP.cpp in Sources */,
-				3A1D006C277F842E00B242EC /* CPPWrapper.mm in Sources */,
 				3A1D0055277F6E5700B242EC /* ViewController.swift in Sources */,
 				3A1D0051277F6E5700B242EC /* AppDelegate.swift in Sources */,
 				3A422CE4277FEB79002B5309 /* thread_logic.cpp in Sources */,
