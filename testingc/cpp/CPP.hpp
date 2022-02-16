@@ -8,9 +8,13 @@
 #ifndef CPP_hpp
 #define CPP_hpp
 
+#include "thread_callbacks_struct.hpp"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+void SomeCLibSetup(const SomeCLibCallbacks *callbacks);
 
 void start_thread_wrapper(void (*onThreadStartedFunction)());
 

@@ -36,6 +36,7 @@
 		3A6C21F627BAAB160040895A /* ThreadExecutionCallbacks.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThreadExecutionCallbacks.hpp; sourceTree = "<group>"; };
 		3A6C21F727BAAD170040895A /* IOSThreadExecutionCallbacks.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IOSThreadExecutionCallbacks.hpp; sourceTree = "<group>"; };
 		3A6C21F827BAAD930040895A /* IOSThreadExecutionCallbacks.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOSThreadExecutionCallbacks.cpp; sourceTree = "<group>"; };
+		3A6C220727BC8D310040895A /* thread_callbacks_struct.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = thread_callbacks_struct.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 				3A1D0066277F70EB00B242EC /* CPP.cpp */,
 				3A6C21F727BAAD170040895A /* IOSThreadExecutionCallbacks.hpp */,
 				3A6C21F827BAAD930040895A /* IOSThreadExecutionCallbacks.cpp */,
+				3A6C220727BC8D310040895A /* thread_callbacks_struct.hpp */,
 				3A1D0067277F70EB00B242EC /* CPP.hpp */,
 				3A422CE6277FF10F002B5309 /* print.hpp */,
 				3A422CE9277FF870002B5309 /* common */,

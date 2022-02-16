@@ -11,6 +11,10 @@
 #include "IOSThreadExecutionCallbacks.hpp"
 #include "print.hpp"
 
+void SomeCLibSetup(const SomeCLibCallbacks * callbacks) {
+    callbacks->printGreeting();
+}
+
 void start_thread_wrapper(void (*onThreadStartedFunction)()) {
   std::thread([onThreadStartedFunction] {
     IOSThreadExecutionCallbacks callbacks(onThreadStartedFunction);
