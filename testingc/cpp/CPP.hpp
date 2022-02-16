@@ -1,12 +1,12 @@
 //
-//  logic.hpp
+//  CPP.h
 //  testingc
 //
 //  Created by Hector Ricardo Mendez Sordia on 31/12/21.
 //
 
-#ifndef CPP_hpp
-#define CPP_hpp
+#ifndef CPP_h
+#define CPP_h
 
 #include "thread_callbacks_struct.hpp"
 
@@ -20,4 +20,4 @@ void start_thread_wrapper(const ThreadCallbacksStruct *);
 }
 #endif
 
-#endif /* CPP_hpp */
+#endif /* CPP_h */

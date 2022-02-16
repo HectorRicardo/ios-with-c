@@ -13,10 +13,10 @@
 
 class IOSThreadExecutionCallbacks : public ThreadExecutionCallbacks {
  public:
-  IOSThreadExecutionCallbacks(const ThreadCallbacksStruct *);
+  IOSThreadExecutionCallbacks(const ThreadCallbacksStruct&);
   void onThreadStarted() const override;
  private:
-  const ThreadCallbacksStruct *threadCallbacks;
+  const ThreadCallbacksStruct& threadCallbacks;
 };
 
 #endif /* IOSThreadExecutionCallbacks_h */

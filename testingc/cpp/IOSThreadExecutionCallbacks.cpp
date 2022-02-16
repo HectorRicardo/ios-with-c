@@ -9,9 +9,9 @@
 #include "thread_callbacks_struct.hpp"
 
 IOSThreadExecutionCallbacks::IOSThreadExecutionCallbacks(
-  const ThreadCallbacksStruct *threadCallbacks) :
+  const ThreadCallbacksStruct& threadCallbacks) :
     threadCallbacks(threadCallbacks) {}
 
 void IOSThreadExecutionCallbacks::onThreadStarted() const {
-  threadCallbacks->onThreadStarted();
+  threadCallbacks.onThreadStarted();
 }

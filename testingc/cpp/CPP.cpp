@@ -13,7 +13,7 @@
 
 void start_thread_wrapper(const ThreadCallbacksStruct *callbacksStruct) {
   std::thread([callbacksStruct] {
-    IOSThreadExecutionCallbacks callbacks(callbacksStruct);
+    IOSThreadExecutionCallbacks callbacks(*callbacksStruct);
     threadBody(callbacks);
   }).detach();
 }
