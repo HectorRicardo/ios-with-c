@@ -5,15 +5,16 @@
 //  Created by Hector Ricardo Mendez Sordia on 31/12/21.
 //
 
-#include <thread>
 #include "CPP.h"
-#include "thread_logic.hpp"
-#include "IOSThreadExecutionCallbacks.hpp"
+
+#include <thread>
 #include "thread_callbacks_struct.h"
+#include "thread_logic.hpp"
+#include "ios_thread_callbacks.hpp"
 
 void start_thread_wrapper(const ThreadCallbacksStruct *callbacksStruct) {
   std::thread([callbacksStruct] {
-    IOSThreadExecutionCallbacks callbacks(*callbacksStruct);
-    threadBody(callbacks);
+    IosThreadCallbacks callbacks(*callbacksStruct);
+    thread_logic(callbacks);
   }).detach();
 }

@@ -15,7 +15,7 @@
 		3A1D005D277F6E5800B242EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1D005B277F6E5800B242EC /* LaunchScreen.storyboard */; };
 		3A1D0068277F70EB00B242EC /* CPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D0066277F70EB00B242EC /* CPP.cpp */; };
 		3A422CE4277FEB79002B5309 /* thread_logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A422CE2277FEB79002B5309 /* thread_logic.cpp */; };
-		3A6C21F927BAAD930040895A /* IOSThreadExecutionCallbacks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C21F827BAAD930040895A /* IOSThreadExecutionCallbacks.cpp */; };
+		3A6C21F927BAAD930040895A /* ios_thread_callbacks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C21F827BAAD930040895A /* ios_thread_callbacks.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,9 @@
 		3A422CE2277FEB79002B5309 /* thread_logic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thread_logic.cpp; sourceTree = "<group>"; };
 		3A422CE3277FEB79002B5309 /* thread_logic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = thread_logic.hpp; sourceTree = "<group>"; };
 		3A422CE6277FF10F002B5309 /* print.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = print.hpp; sourceTree = "<group>"; };
-		3A6C21F627BAAB160040895A /* ThreadExecutionCallbacks.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThreadExecutionCallbacks.hpp; sourceTree = "<group>"; };
-		3A6C21F727BAAD170040895A /* IOSThreadExecutionCallbacks.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IOSThreadExecutionCallbacks.hpp; sourceTree = "<group>"; };
-		3A6C21F827BAAD930040895A /* IOSThreadExecutionCallbacks.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOSThreadExecutionCallbacks.cpp; sourceTree = "<group>"; };
+		3A6C21F627BAAB160040895A /* thread_callbacks.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = thread_callbacks.hpp; sourceTree = "<group>"; };
+		3A6C21F727BAAD170040895A /* ios_thread_callbacks.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ios_thread_callbacks.hpp; sourceTree = "<group>"; };
+		3A6C21F827BAAD930040895A /* ios_thread_callbacks.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ios_thread_callbacks.cpp; sourceTree = "<group>"; };
 		3A6C220727BC8D310040895A /* thread_callbacks_struct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread_callbacks_struct.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,8 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				3A1D0066277F70EB00B242EC /* CPP.cpp */,
-				3A6C21F727BAAD170040895A /* IOSThreadExecutionCallbacks.hpp */,
-				3A6C21F827BAAD930040895A /* IOSThreadExecutionCallbacks.cpp */,
+				3A6C21F727BAAD170040895A /* ios_thread_callbacks.hpp */,
+				3A6C21F827BAAD930040895A /* ios_thread_callbacks.cpp */,
 				3A6C220727BC8D310040895A /* thread_callbacks_struct.h */,
 				3A1D0067277F70EB00B242EC /* CPP.h */,
 				3A422CE6277FF10F002B5309 /* print.hpp */,
@@ -101,7 +101,7 @@
 			children = (
 				3A422CE2277FEB79002B5309 /* thread_logic.cpp */,
 				3A422CE3277FEB79002B5309 /* thread_logic.hpp */,
-				3A6C21F627BAAB160040895A /* ThreadExecutionCallbacks.hpp */,
+				3A6C21F627BAAB160040895A /* thread_callbacks.hpp */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A1D0068277F70EB00B242EC /* CPP.cpp in Sources */,
-				3A6C21F927BAAD930040895A /* IOSThreadExecutionCallbacks.cpp in Sources */,
+				3A6C21F927BAAD930040895A /* ios_thread_callbacks.cpp in Sources */,
 				3A1D0055277F6E5700B242EC /* ViewController.swift in Sources */,
 				3A1D0051277F6E5700B242EC /* AppDelegate.swift in Sources */,
 				3A422CE4277FEB79002B5309 /* thread_logic.cpp in Sources */,
