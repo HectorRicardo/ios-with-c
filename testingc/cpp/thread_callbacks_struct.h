@@ -10,7 +10,7 @@
 
 struct ThreadCallbacksStruct {
   void (*onThreadStarted)(void);
-  void (*onIterationComplete)(void);
+  void (*onIterationComplete)(int iteration);
   void (*onThreadFinished)(void);
 };
 

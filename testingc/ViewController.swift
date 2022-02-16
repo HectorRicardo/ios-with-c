@@ -9,8 +9,8 @@ import UIKit
 
 var threadCallbacks = ThreadCallbacksStruct(
     onThreadStarted: { print("Swift thread started") },
-    onIterationComplete: {
-        print("Iteration complete")
+    onIterationComplete: { (iteration) in
+        print("Iteration \(iteration) complete")
     },
     onThreadFinished: { print("Swift thread ended") }
 )

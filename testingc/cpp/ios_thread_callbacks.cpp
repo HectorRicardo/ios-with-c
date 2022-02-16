@@ -16,7 +16,7 @@ void IosThreadCallbacks::onThreadStarted() const {
 }
 
 void IosThreadCallbacks::onIterationComplete(int iteration) const {
-  callbacks.onIterationComplete();
+  callbacks.onIterationComplete(iteration);
 }
 
 void IosThreadCallbacks::onThreadFinished() const {
