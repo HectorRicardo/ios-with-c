@@ -1,12 +1,12 @@
 //
-//  thread_callbacks_struct.hpp
+//  thread_callbacks_struct.h
 //  testingc
 //
 //  Created by Hector Ricardo Mendez Sordia on 15/02/22.
 //
 
-#ifndef thread_callbacks_struct_hpp
-#define thread_callbacks_struct_hpp
+#ifndef thread_callbacks_struct_h
+#define thread_callbacks_struct_h
 
 struct ThreadCallbacksStruct {
   void (*onThreadStarted)();
@@ -14,4 +14,4 @@ struct ThreadCallbacksStruct {
 
 typedef struct ThreadCallbacksStruct ThreadCallbacksStruct;
 
-#endif /* thread_callbacks_struct_hpp */
+#endif /* thread_callbacks_struct_h */

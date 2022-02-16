@@ -6,7 +6,7 @@
 //
 
 #include "IOSThreadExecutionCallbacks.hpp"
-#include "thread_callbacks_struct.hpp"
+#include "thread_callbacks_struct.h"
 
 IOSThreadExecutionCallbacks::IOSThreadExecutionCallbacks(
   const ThreadCallbacksStruct& threadCallbacks) :

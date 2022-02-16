@@ -8,7 +8,7 @@
 #ifndef CPP_h
 #define CPP_h
 
-#include "thread_callbacks_struct.hpp"
+#include "thread_callbacks_struct.h"
 
 #ifdef __cplusplus
 extern "C" {
