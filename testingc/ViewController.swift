@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         myLabel2.text = "Hello normal"
         myLabel2.sizeToFit()
         
-        var callbacks = SomeCLibCallbacks(
+        var callbacks = ThreadCallbacksStruct(
             onThreadStarted: {
                 print("Hello froms wift")
             }

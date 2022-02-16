@@ -8,10 +8,10 @@
 #ifndef thread_callbacks_struct_hpp
 #define thread_callbacks_struct_hpp
 
-struct SomeCLibCallbacks {
+struct ThreadCallbacksStruct {
   void (*onThreadStarted)();
 };
 
-typedef struct SomeCLibCallbacks SomeCLibCallbacks;
+typedef struct ThreadCallbacksStruct ThreadCallbacksStruct;
 
 #endif /* thread_callbacks_struct_hpp */

@@ -14,7 +14,7 @@
 extern "C" {
 #endif
 
-void SomeCLibSetup(const SomeCLibCallbacks *callbacks);
+void SomeCLibSetup(const ThreadCallbacksStruct *callbacks);
 
 void start_thread_wrapper(void (*onThreadStartedFunction)());
 

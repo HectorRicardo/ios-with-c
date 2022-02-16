@@ -9,8 +9,9 @@
 #include "CPP.hpp"
 #include "thread_logic.hpp"
 #include "IOSThreadExecutionCallbacks.hpp"
+#include "thread_callbacks_struct.hpp"
 
-void SomeCLibSetup(const SomeCLibCallbacks *callbacks) {
+void SomeCLibSetup(const ThreadCallbacksStruct *callbacks) {
     callbacks->onThreadStarted();
 }
 
