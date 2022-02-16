@@ -7,6 +7,10 @@
 
 import UIKit
 
+private func onThreadStarted() {
+    print("Calling from Swift")
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel2: UILabel!
