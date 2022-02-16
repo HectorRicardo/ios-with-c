@@ -8,18 +8,17 @@
 #include "ios_thread_callbacks.hpp"
 #include "thread_callbacks_struct.h"
 
-IosThreadCallbacks::IosThreadCallbacks(
-  const ThreadCallbacksStruct& threadCallbacks) :
-    threadCallbacks(threadCallbacks) {}
+IosThreadCallbacks::IosThreadCallbacks(const ThreadCallbacksStruct& callbacks)
+  : callbacks(callbacks) {}
 
 void IosThreadCallbacks::onThreadStarted() const {
-  threadCallbacks.onThreadStarted();
+  callbacks.onThreadStarted();
 }
 
 void IosThreadCallbacks::onIterationComplete(int iteration) const {
-    threadCallbacks.onThreadStarted();
+  callbacks.onThreadStarted();
 }
 
 void IosThreadCallbacks::onThreadFinished() const {
-    threadCallbacks.onThreadStarted();
+  callbacks.onThreadStarted();
 }

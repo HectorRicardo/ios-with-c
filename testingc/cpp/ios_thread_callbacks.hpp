@@ -18,7 +18,7 @@ class IosThreadCallbacks : public ThreadCallbacks {
   void onIterationComplete(int iteration) const override;
   void onThreadFinished() const override;
  private:
-  const ThreadCallbacksStruct& threadCallbacks;
+  const ThreadCallbacksStruct& callbacks;
 };
 
 #endif /* ios_thread_callbacks_hpp */
