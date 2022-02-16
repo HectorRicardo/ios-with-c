@@ -9,8 +9,9 @@
 #define thread_callbacks_struct_hpp
 
 struct SomeCLibCallbacks {
-  void (*printGreeting)();
+  void (*onThreadStarted)();
 };
+
 typedef struct SomeCLibCallbacks SomeCLibCallbacks;
 
 #endif /* thread_callbacks_struct_hpp */

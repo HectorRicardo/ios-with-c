@@ -17,13 +17,13 @@ class ViewController: UIViewController {
         myLabel2.sizeToFit()
         
         var callbacks = SomeCLibCallbacks(
-            printGreeting: {
+            onThreadStarted: {
                 print("Hello froms wift")
             }
         )
         SomeCLibSetup(&callbacks)
 
         // Calling C++
-        start_thread_wrapper(callbacks.printGreeting)
+        start_thread_wrapper(callbacks.onThreadStarted)
     }
 }

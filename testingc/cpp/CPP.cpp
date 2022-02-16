@@ -9,10 +9,9 @@
 #include "CPP.hpp"
 #include "thread_logic.hpp"
 #include "IOSThreadExecutionCallbacks.hpp"
-#include "print.hpp"
 
-void SomeCLibSetup(const SomeCLibCallbacks * callbacks) {
-    callbacks->printGreeting();
+void SomeCLibSetup(const SomeCLibCallbacks *callbacks) {
+    callbacks->onThreadStarted();
 }
 
 void start_thread_wrapper(void (*onThreadStartedFunction)()) {
