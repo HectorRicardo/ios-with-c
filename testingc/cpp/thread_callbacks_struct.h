@@ -9,9 +9,9 @@
 #define thread_callbacks_struct_h
 
 struct ThreadCallbacksStruct {
-  void (*onThreadStarted)();
-  void (*onIterationComplete)();
-  void (*onThreadFinished)();
+  void (*onThreadStarted)(void);
+  void (*onIterationComplete)(void);
+  void (*onThreadFinished)(void);
 };
 
 typedef struct ThreadCallbacksStruct ThreadCallbacksStruct;
