@@ -10,6 +10,8 @@
 
 struct ThreadCallbacksStruct {
   void (*onThreadStarted)();
+  void (*onIterationComplete)();
+  void (*onThreadFinished)();
 };
 
 typedef struct ThreadCallbacksStruct ThreadCallbacksStruct;
