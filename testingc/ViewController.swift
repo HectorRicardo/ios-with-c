@@ -21,6 +21,6 @@ class ViewController: UIViewController {
         myLabel2.sizeToFit()
 
         // Calling C++
-        start_thread_wrapper()
+        start_thread_wrapper(onThreadStarted)
     }
 }

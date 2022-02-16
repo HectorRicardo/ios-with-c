@@ -12,7 +12,7 @@
 extern "C" {
 #endif
 
-void start_thread_wrapper();
+void start_thread_wrapper(void (*onThreadStartedFunction)());
 
 #ifdef __cplusplus
 }

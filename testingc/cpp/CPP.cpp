@@ -11,13 +11,9 @@
 #include "IOSThreadExecutionCallbacks.hpp"
 #include "print.hpp"
 
-void cppFunction() {
-  print("Calling from C++ new")
-}
-
-void start_thread_wrapper() {
-  std::thread([] {
-    IOSThreadExecutionCallbacks callbacks(cppFunction);
+void start_thread_wrapper(void (*onThreadStartedFunction)()) {
+  std::thread([onThreadStartedFunction] {
+    IOSThreadExecutionCallbacks callbacks(onThreadStartedFunction);
     threadBody(callbacks);
   }).detach();
 }
