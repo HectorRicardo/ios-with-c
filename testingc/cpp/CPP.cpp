@@ -9,10 +9,15 @@
 #include "CPP.hpp"
 #include "thread_logic.hpp"
 #include "IOSThreadExecutionCallbacks.hpp"
+#include "print.hpp"
+
+void cppFunction() {
+  print("Calling from C++ new")
+}
 
 void start_thread_wrapper() {
   std::thread([] {
-    IOSThreadExecutionCallbacks callbacks{};
+    IOSThreadExecutionCallbacks callbacks(cppFunction);
     threadBody(callbacks);
   }).detach();
 }

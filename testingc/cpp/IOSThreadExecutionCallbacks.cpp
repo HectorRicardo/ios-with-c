@@ -6,13 +6,10 @@
 //
 
 #include "IOSThreadExecutionCallbacks.hpp"
-#include "print.hpp"
 
-void cppFunction() {
-  print("Calling from C++")
-}
+IOSThreadExecutionCallbacks::IOSThreadExecutionCallbacks(
+  void (*onThreadStartedFunction)()) : onThreadStartedFunction(onThreadStartedFunction) {}
 
 void IOSThreadExecutionCallbacks::onThreadStarted() const {
-  void (*theFunction)() = cppFunction;
-  theFunction();
+  onThreadStartedFunction();
 }

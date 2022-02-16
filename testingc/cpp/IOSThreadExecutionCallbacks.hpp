@@ -12,8 +12,10 @@
 
 class IOSThreadExecutionCallbacks : public ThreadExecutionCallbacks {
  public:
+  IOSThreadExecutionCallbacks(void (*onThreadStartedFunction)());
   void onThreadStarted() const override;
+ private:
+  void (*onThreadStartedFunction)();
 };
-
 
 #endif /* IOSThreadExecutionCallbacks_h */
