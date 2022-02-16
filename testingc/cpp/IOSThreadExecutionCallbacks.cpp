@@ -6,10 +6,12 @@
 //
 
 #include "IOSThreadExecutionCallbacks.hpp"
+#include "thread_callbacks_struct.hpp"
 
 IOSThreadExecutionCallbacks::IOSThreadExecutionCallbacks(
-  void (*onThreadStartedFunction)()) : onThreadStartedFunction(onThreadStartedFunction) {}
+  const ThreadCallbacksStruct *threadCallbacks) :
+    threadCallbacks(threadCallbacks) {}
 
 void IOSThreadExecutionCallbacks::onThreadStarted() const {
-  onThreadStartedFunction();
+  threadCallbacks->onThreadStarted();
 }

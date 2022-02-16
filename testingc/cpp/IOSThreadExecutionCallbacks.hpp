@@ -9,13 +9,14 @@
 #define IOSThreadExecutionCallbacks_h
 
 #include "ThreadExecutionCallbacks.hpp"
+#include "thread_callbacks_struct.hpp"
 
 class IOSThreadExecutionCallbacks : public ThreadExecutionCallbacks {
  public:
-  IOSThreadExecutionCallbacks(void (*onThreadStartedFunction)());
+  IOSThreadExecutionCallbacks(const ThreadCallbacksStruct *);
   void onThreadStarted() const override;
  private:
-  void (*onThreadStartedFunction)();
+  const ThreadCallbacksStruct *threadCallbacks;
 };
 
 #endif /* IOSThreadExecutionCallbacks_h */

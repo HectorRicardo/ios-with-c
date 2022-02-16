@@ -11,13 +11,9 @@
 #include "IOSThreadExecutionCallbacks.hpp"
 #include "thread_callbacks_struct.hpp"
 
-void SomeCLibSetup(const ThreadCallbacksStruct *callbacks) {
-    callbacks->onThreadStarted();
-}
-
-void start_thread_wrapper(void (*onThreadStartedFunction)()) {
-  std::thread([onThreadStartedFunction] {
-    IOSThreadExecutionCallbacks callbacks(onThreadStartedFunction);
+void start_thread_wrapper(const ThreadCallbacksStruct *callbacksStruct) {
+  std::thread([callbacksStruct] {
+    IOSThreadExecutionCallbacks callbacks(callbacksStruct);
     threadBody(callbacks);
   }).detach();
 }

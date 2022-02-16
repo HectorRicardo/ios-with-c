@@ -7,6 +7,6 @@
 
 #include "ThreadExecutionCallbacks.hpp"
 
-void threadBody(ThreadExecutionCallbacks&);
+void threadBody(const ThreadExecutionCallbacks&);
 
 #endif // MYAPP_THREAD_LOGIC_HPP

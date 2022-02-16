@@ -7,6 +7,10 @@
 
 import UIKit
 
+var threadCallbacks = ThreadCallbacksStruct(
+    onThreadStarted: { print("Swift thread started") }
+)
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel2: UILabel!
@@ -15,15 +19,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         myLabel2.text = "Hello normal"
         myLabel2.sizeToFit()
-        
-        var callbacks = ThreadCallbacksStruct(
-            onThreadStarted: {
-                print("Hello froms wift")
-            }
-        )
-        SomeCLibSetup(&callbacks)
 
         // Calling C++
-        start_thread_wrapper(callbacks.onThreadStarted)
+        start_thread_wrapper(&threadCallbacks)
     }
 }
